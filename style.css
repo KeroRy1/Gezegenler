@@ -1,0 +1,201 @@
+/* Genel Ayarlar */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b0c10;
+  color: #f0f0f0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f2833;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  color: #66fcf1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f0f0f0;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #66fcf1;
+}
+
+/* Hero Bölümü */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, #0b0c10, #1f2833);
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  background: #66fcf1;
+  color: #0b0c10;
+  font-size: 1.2em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.hero button:hover {
+  transform: scale(1.1);
+}
+
+/* Gezegenler */
+.planets {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.planet-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.planet {
+  text-align: center;
+  cursor: pointer;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  animation: spin 10s linear infinite;
+}
+
+.mercury { background: gray; }
+.venus { background: orange; }
+.earth { background: blue; }
+.mars { background: red; }
+.jupiter { background: brown; }
+
+@keyframes spin {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
+
+/* Galeri */
+.gallery {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.gallery .images {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* İletişim */
+.contact {
+  padding: 50px 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 10px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background: #66fcf1;
+  color: #0b0c10;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1f2833;
+  color: #aaa;
+}
+
+/* Gezegen Bilgi Kutusu */
+.planet-info {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #1f2833;
+  color: #66fcf1;
+  padding: 15px;
+  border-radius: 8px;
+  display: none;
+  max-width: 250px;
+}
+
+.mercury { 
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+}
+
+.venus { 
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/85/Venus_globe.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+}
+
+.earth { 
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+}
+
+.mars { 
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+}
+
+.jupiter { 
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+}
