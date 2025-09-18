@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uzay Keşifleri</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🌌 Uzay Keşifleri</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Ana Sayfa</a></li>
+        <li><a href="#planets">Gezegenler</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Evrenin Derinliklerine Yolculuk</h2>
+    <p>Bilim, hayal gücü ve keşiflerle dolu bir serüvene hazır mısın?</p>
+    <button id="exploreBtn">Keşfe Başla</button>
+  </section>
+
+  <section id="planets" class="planets">
+    <h2>Gezegenler</h2>
+    <div class="planet-container">
+      <div class="planet" data-info="Merkür, Güneş'e en yakın gezegen.">
+        <div class="circle mercury"></div>
+        <span>Merkür</span>
+      </div>
+      <div class="planet" data-info="Venüs, yoğun atmosferiyle bilinir.">
+        <div class="circle venus"></div>
+        <span>Venüs</span>
+      </div>
+      <div class="planet" data-info="Dünyamız, yaşamın tek bilinen yuvası.">
+        <div class="circle earth"></div>
+        <span>Dünya</span>
+      </div>
+      <div class="planet" data-info="Mars, kızıl gezegen.">
+        <div class="circle mars"></div>
+        <span>Mars</span>
+      </div>
+      <div class="planet" data-info="Jüpiter, en büyük gezegen.">
+        <div class="circle jupiter"></div>
+        <span>Jüpiter</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Galeri</h2>
+    <div class="images">
+      <img src="https://picsum.photos/400/200?random=1" alt="Uzay Fotoğrafı 1">
+      <img src="https://picsum.photos/400/200?random=2" alt="Uzay Fotoğrafı 2">
+      <img src="https://picsum.photos/400/200?random=3" alt="Uzay Fotoğrafı 3">
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>İletişim</h2>
+    <form>
+      <label for="name">Adınız:</label>
+      <input type="text" id="name" required>
+      <label for="email">E-posta:</label>
+      <input type="email" id="email" required>
+      <label for="message">Mesajınız:</label>
+      <textarea id="message" rows="4"></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Uzay Keşifleri | Tüm Hakları Saklıdır</p>
+  </footer>
+
+  <div id="planetInfo" class="planet-info"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
